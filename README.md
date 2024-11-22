@@ -1,131 +1,174 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# ![Logo](assets/images/logo-png.png)
+## Description
 
-Welcome Matt Haynes,
+WattsUp is designed to deliver energy rates for Octopus Energy users in a clear and user-friendly manner. Its primary goal is to help users save on their energy bills by providing insights into peak and off-peak periods for energy consumption, empowering them to make informed decisions about their usage.
+This project was developed during a three-day hackathon at Code Institute, following the completion of the HTML, CSS, and JavaScript modules.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+## Table of Contents
+1. [Brief](#Brief) 
+2. [Features](#features)
+3. [UX/UI](#UX/UI)
+4. [User-Stories](#User-Stories)
+5. [Testing](#testing)
+6. [Deployment](#deployment)
+7. [Reflections on the Development Process](https://github.com/andreamaestri/hackathon-1/blob/develop_ed/README.md#reflections-on-the-development-process)
+8. [Credits](#Credits)
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Brief
 
-`python3 -m http.server`
+#### External User’s Goal:
+The user seeks , accessible, easy-to-understand information on energy rates and consumption patterns.
 
-A blue button should appear to click: _Make Public_,
+#### Site Owner’s Goal:
+The site owner wants to provide a user-friendly platform that helps users make informed decisions about their energy usage and save on their bills.
 
-Another blue button should appear to click: _Open Browser_.
+## Features
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+- **Real-Time Energy Rates**: Displays current energy rates in an easy-to-read format, including peak and off-peak prices.
+- **User-Friendly Interface**: Clean Design, intuitive interface that makes it easy for users to navigate and understand their energy costs.
+- **Multi-Device Compatibility**: The platform is responsive and accessible on various devices, including desktops, tablets, and smartphones.
 
-A blue button should appear to click: _Make Public_,
+#### Optional Additional Features 
 
-Another blue button should appear to click: _Open Browser_.
+- **Personalized Recommendations**: Suggest optimal times for energy usage based on the user's consumption patterns and current rates.
+- **Alerts and Reminders**: Set up customizable alerts for users to receive notifications about changing rates or reminders to reduce usage during peak times.
+- **Community Insights**: Feature a community section where users can share tips and experiences on energy savings.
+- **FAQs and Support**: Provide a section for frequently asked questions and customer support to assist users with any issues.
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+# UX/UI
 
-To log into the Heroku toolbelt CLI:
+### Initial Design Thoughts
+As this project aims to help users easily understand energy rates and optimize their consumption, the design focuses on simplicity, ease of use, and accessibility. The color palette and layout are chosen to create a calm and inviting atmosphere while highlighting important information, using contrasting colors for readability and intuitive navigation.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### Color Palette
+![ColourPalette](assets/images/colour-palette.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
 
-### Connecting your Mongo database
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+![Colourpallete2](assets/images/colour-codes-new.png)
 
-------
+The selected color palette includes deep purple (#2E073F), vibrant magenta (#7A1CAC), soft lavender (#AD49E1), and light lilac (#EBD3F8) to evoke a sense of creativity and calmness. These colors are similar to those used by Octopus Energy, reinforcing brand recognition while creating an inviting atmosphere that enhances user experience and ensures clarity in presenting important information.
 
-## Release History
+The color palette choice for the graph was made to contrast with the varying purples, offering more accessibility to otherwise dense data. This showcases **#07195** **#0B666A** **#35A29F** **#97FEED** with the additional **#FFF** for the white grid lines: 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![graphColorPalette](assets/images/colour-palette-graph.png)
 
-**June 18, 2024,** Add Mongo back into template
+![colorCodesGraph](assets/images/colour-codes-graph.png)
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+#### Typography
+- **Montserrat**: Used for the logo and website links because its modern and geometric design enhances readability and creates a cohesive, professional look that aligns with the WattsUp identity.
+- **Sans-serif**: Used for body text due to its clean lines and excellent readability, making it ideal for conveying information clearly across various devices and screen sizes.
 
-**May 28 2024:** Fix Mongo and Links installs
+## User-Stories
 
-**April 26 2024:** Update node version to 16
+- **As a user**, I want to be able to visualise peak and off peak periods for gas and electricity consumption, so I can i can check prices anytime, anywhere.
+- **As a user**, I want to easily be able to navigate between sections on mobile and web website, so I can find the information i require.
+- **As a user**, I want to check what time the energy is cheaper, so I can put my washing machine on.
+- **As a user**, I want to access the data on both mobile and desktop , so I can check prices anytime, anywhere.
+- **As a user**, I want to view tips on how to reduce energy consumption during peak price periods , so I can  save on my bills.
+- **As the site owner**, I want to allow users to input their energy consumption habits. So users can receive personalized recommendations on the best times to use energy-intensive appliances.
+- **As the site owner**, I want to provide users with a visual chart of energy price trends over the day, so users can easily identify the cheapest time slots for energy consumption.
+- **As the site owner**, I want to enable users to set up automated reminders for when energy prices are low, so users can ensure they don’t miss opportunities to save on their energy costs..
 
-**September 20 2023:** Update Python version to 3.9.17.
+### MoSCoW & Acceptance Criteria
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+#### Must Haves
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- **Card-like Section**: 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+1. Card Layout and Structure
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* Each card should have a consistent structure (e.g., title, data/value, description, and optional action buttons).
+* Cards should be clearly separated visually, with borders or shadows to distinguish them from one another.
+* The cards should automatically adjust their layout based on screen size:
+* On web (desktop): Cards should be arranged in a grid format, making use of the available space.
+* On mobile: Cards should stack vertically and resize to fit smaller screens.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+2. Responsive Design
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* The card section should be responsive, with cards resizing and rearranging depending on the screen size and device.
+* Cards should maintain readable font sizes and clear visuals on both small mobile screens and larger desktop screens.
+* On mobile, users should not need to zoom in or excessively scroll horizontally to view a full card.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+3. Loading and Performance
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* Cards should load within 2 seconds, even when multiple cards are being displayed.
+* If data for the cards is being fetched from an API, there should be a loading indicator (e.g., a spinner or skeleton card) to signal that the data is being retrieved.
+* The section should be optimised for fast performance, even with a large number of cards, ensuring smooth scrolling and minimal load times.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+#### Should Have
+- **Real-Time Price Updates**: Implement a system to fetch and display energy prices every half hour, ensuring users have the latest information.
+- **User-Friendly Dashboard**: An intuitive dashboard that visualizes energy prices, trends, and recommended times for usage.
+- **Notification System**: A feature that allows users to set alerts for when prices drop below a specified level.
+- **Data Visualization**: Include graphs or charts that show historical price data and forecast trends to help users make informed decisions.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+#### Could Have
+- **Weather Integration:** Incorporated weather data to help users understand how weather conditions might affect energy prices and consumption.
+- **Carbon Footprint Calculator:**: A tool that estimates users carbon footprint based on their energy consumption, promoting eco-friendly habits.
+- **Integration with Smart Devices:**: Users can connect smart home devices to automate energy usage based on price alerts.
+- **Community Features:**: Add a forum or discussion section where users can share tips and experiences related to energy savings.
+- **Peak and Off-Peak Notifications**: Alert users about peak and off-peak periods for energy consumption, helping them plan usage accordingly.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Wireframes & Initial Design
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Mobile and Tablet Wireframes
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![Tablet and mobile Wireframes](assets/images/Wireframe.png)
 
-------
+### Desktop Wireframes
+![Desktop Wireframes](assets/images/wireframe1.png)
 
-## FAQ about the uptime script
+## Technologies Used
 
-**Why have you added this script?**
+- **HTML**: Used to structure the content and layout of the website, ensuring a semantic and organized presentation of information.
+- **JavaScript**: Implemented to extract data and add interactivity to the site, such as dynamic updates to energy rates and responsive features that enhance user engagement.
+- **CSS/Bootstrap**: Utilized for styling the website, ensuring a visually appealing design that is responsive and accessible across various devices, leveraging Bootstrap's grid system for layout.
+- **Octopus Energy REST API**: https://docs.octopus.energy/rest/guides/api-basics  Integrated to fetch real-time energy rate data, allowing users to access the latest information directly from Octopus Energy.
+- **Chart.js**: Used to visualize energy rate trends and consumption patterns, allowing users to easily interpret data and make informed decisions about their energy usage. The interactive charts enhance user engagement by providing clear insights into peak and off-peak periods.-
+- **Chatgpt**: Assisted in structuring the user stories and organizing the content on the README file, ensuring clarity and coherence in the project's documentation.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+## Testing
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Tools Used
+- **Chrome Dev Tools**: Used for testing responsiveness.
+- **JSHint**: Used for testing JavaScript.
+- **W3C Validator**: Used for testing html.
+- **W3C Jigsaw**: Used for testing css.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### Feature Testing
+- [Description of testing process for feature, e.g., navigation, responsiveness].
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Deployment
 
-**So….?**
+The project was deployed using **GitHub Pages** and can be accessed through [https://andreamaestri.github.io/hackathon-1/]. Steps taken to deploy:
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+1. Go to the repository settings.
+2. Scroll to the GitHub Pages section.
+3. Under Source, select the branch to be deployed (typically main or master).
+4. Choose the root directory or /docs folder as the publishing source.
+5. Save changes.
+6. After a few seconds, GitHub will generate a live link for the site.
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Reflections on the Development Process
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Successes
+- **[Success 1]**: [Brief description]
+- **[Success 2]**: [Brief description]
 
-**Anything more?**
+### Challenges
+- **[Challenge 1]**: [Brief description of challenge faced]
+- **[Challenge 2]**: [Brief description of challenge faced]
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Final Thoughts
+This project has provided valuable insights into [skills or areas learned], highlighting [strengths of the project]. In the future, I would like to improve on [areas for improvement].
 
----
+## Credits
 
-Happy coding!
+- **[Credit 1]**: [Description of contribution or inspiration source]
+- **[Credit 2]**: [Description of contribution or inspiration source]
+- **[Tools and Resources]**: [Tools used like Google Images for images, Font Awesome for icons, etc.]
