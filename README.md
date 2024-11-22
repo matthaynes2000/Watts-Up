@@ -1,8 +1,17 @@
+Link to site: https://britishm4tt.github.io/Watts-Up/
+
 # ![Logo](assets/images/logo-png.png)
 ## Description
 
 WattsUp is designed to deliver energy rates for Octopus Energy users in a clear and user-friendly manner. Its primary goal is to help users save on their energy bills by providing insights into peak and off-peak periods for energy consumption, empowering them to make informed decisions about their usage.
 This project was developed during a three-day hackathon at Code Institute, following the completion of the HTML, CSS, and JavaScript modules.
+
+Contributors:
+- [Andrea](https://github.com/andreamaestri)
+- [Edward](https://github.com/E-Printer)
+- [Fabio](https://github.com/fabiowxavier)
+
+Link to original repository: https://github.com/andreamaestri/hackathon-1
 
 
 ## Table of Contents
